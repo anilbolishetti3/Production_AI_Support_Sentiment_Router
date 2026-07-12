@@ -26,7 +26,15 @@ Evaluates the metadata output from the AI layer and splits operational execution
 *   **Billing Route:** Triggers when the payload contains `Route: Billing`. Appends structured transaction records to a tracking ledger via **Google Sheets** (protected by an independent `Skip` error handler).
 *   **Customer Success Route:** Triggers when the payload contains `Route: Customer_Success`. Automatically generates and delivers a contextual, data-populated customer acknowledgment email via **Gmail**.
 
----
+## 📂 Live Ingress Demonstration & Deployment
+* **Live Ingress Interface (Google Form)**: https://forms.gle/Rd4Bw3Q5dUbqY3j79
+
+### Installation Steps:
+1. Create an account at **Make.com**.
+2. Create a new scenario, click **More Options (...)** in the bottom menu, and select **Import Blueprint**.
+3. Upload the blueprint file (`.json` or `.txt`) included in this repository.
+4. Connect your target Google Sheet (linked to your respective Google Form configuration), input your Gemini API Key, and authorize your Gmail account.
+5. Toggle the Scenario settings to **"Allow storing incomplete executions"** to fully enable the enterprise self-healing loop.
 
 ## 📸 Architecture Visualizations
 
